@@ -7,7 +7,6 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt4 import QtCore, QtGui
-import css4
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8
@@ -80,6 +79,7 @@ class Ui_Dialog(object):
     def check(self):
         import sys
         if str(self.comboBox_2.currentText())=="CS" and str(self.comboBox.currentText())=="S4":
+            import css4
             Dialog2 = QtGui.QDialog()
             ui2 = css4.Ui_Dialog()
             ui2.setupUi(Dialog2)
@@ -133,9 +133,65 @@ class Ui_Dialog(object):
             ui2 = css8.Ui_Dialog()
             ui2.setupUi(Dialog2)
             Dialog.hide()
-            Dialog2.exec_()        
+            Dialog2.exec_()  
+         if str(self.comboBox_2.currentText())=="EEE" and str(self.comboBox.currentText())=="S4":
+            import eees4
+            Dialog2 = QtGui.QDialog()
+            ui2 = eees4.Ui_Dialog()
+            ui2.setupUi(Dialog2)
+            Dialog.hide()
+            Dialog2.exec_()
+        elif str(self.comboBox_2.currentText())=="EEE" and str(self.comboBox.currentText())=="S3":
+            import eees3
+            Dialog2 = QtGui.QDialog()
+            ui2 = eees3.Ui_Dialog()
+            ui2.setupUi(Dialog2)
+            Dialog.hide()
+            Dialog2.exec_()    
+        elif str(self.comboBox_2.currentText())=="EEE" and str(self.comboBox.currentText())=="S1":
+            import eees1
+            Dialog2 = QtGui.QDialog()
+            ui2 = eees1.Ui_Dialog()
+            ui2.setupUi(Dialog2)
+            Dialog.hide()
+            Dialog2.exec_()    
+        elif str(self.comboBox_2.currentText())=="EEE" and str(self.comboBox.currentText())=="S2":
+            import eees2
+            Dialog2 = QtGui.QDialog()
+            ui2 = eees2.Ui_Dialog()
+            ui2.setupUi(Dialog2)
+            Dialog.hide()
+            Dialog2.exec_()    
+        elif str(self.comboBox_2.currentText())=="EEE" and str(self.comboBox.currentText())=="S5":
+            import eees5
+            Dialog2 = QtGui.QDialog()
+            ui2 = eees5.Ui_Dialog()
+            ui2.setupUi(Dialog2)
+            Dialog.hide()
+            Dialog2.exec_()    
+        elif str(self.comboBox_2.currentText())=="EEE" and str(self.comboBox.currentText())=="S6":
+            import eees6
+            Dialog2 = QtGui.QDialog()
+            ui2 = eees6.Ui_Dialog()
+            ui2.setupUi(Dialog2)
+            Dialog.hide()
+            Dialog2.exec_()    
+        elif str(self.comboBox_2.currentText())=="EEE" and str(self.comboBox.currentText())=="S7":
+            import eees7
+            Dialog2 = QtGui.QDialog()
+            ui2 = eees7.Ui_Dialog()
+            ui2.setupUi(Dialog2)
+            Dialog.hide()
+            Dialog2.exec_()
+        elif str(self.comboBox_2.currentText())=="EEE" and str(self.comboBox.currentText())=="S8":
+            import eees8
+            Dialog2 = QtGui.QDialog()
+            ui2 = eees8.Ui_Dialog()
+            ui2.setupUi(Dialog2)
+            Dialog.hide()
+            Dialog2.exec_()       
 
-
+                             
 if __name__ == "__main__":
     import sys
     app = QtGui.QApplication(sys.argv)
