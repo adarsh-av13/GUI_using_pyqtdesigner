@@ -71,9 +71,9 @@ class Ui_Dialog(object):
         self.comboBox.setItemText(5, _translate("Dialog", "S6", None))
         self.comboBox.setItemText(6, _translate("Dialog", "S7", None))
         self.comboBox.setItemText(7, _translate("Dialog", "S8", None))
-        self.comboBox_2.setItemText(0, _translate("Dialog", "CIVIL", None))
+        self.comboBox_2.setItemText(0, _translate("Dialog", "CS", None))
         self.comboBox_2.setItemText(1, _translate("Dialog", "ME", None))
-        self.comboBox_2.setItemText(2, _translate("Dialog", "CS", None))
+        self.comboBox_2.setItemText(2, _translate("Dialog", "EEE", None))
         self.lineEdit.setText(_translate("Dialog", "Semester", None))
         self.lineEdit_2.setText(_translate("Dialog", "Branch", None))
     
