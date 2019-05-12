@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+c# -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'css4.ui'
 #
@@ -57,15 +57,6 @@ class Ui_Dialog(object):
         self.lineEdit_5 = QtGui.QLineEdit(Dialog)
         self.lineEdit_5.setGeometry(QtCore.QRect(20, 260, 113, 29))
         self.lineEdit_5.setObjectName(_fromUtf8("lineEdit_5"))
-        self.lineEdit_6 = QtGui.QLineEdit(Dialog)
-        self.lineEdit_6.setGeometry(QtCore.QRect(20, 330, 113, 29))
-        self.lineEdit_6.setObjectName(_fromUtf8("lineEdit_6"))
-        self.lineEdit_7 = QtGui.QLineEdit(Dialog)
-        self.lineEdit_7.setGeometry(QtCore.QRect(20, 390, 113, 29))
-        self.lineEdit_7.setObjectName(_fromUtf8("lineEdit_7"))
-        self.lineEdit_8 = QtGui.QLineEdit(Dialog)
-        self.lineEdit_8.setGeometry(QtCore.QRect(20, 460, 113, 29))
-        self.lineEdit_8.setObjectName(_fromUtf8("lineEdit_8"))
         self.comboBox = QtGui.QComboBox(Dialog)
         self.comboBox.setGeometry(QtCore.QRect(200, 20, 69, 25))
         self.comboBox.setObjectName(_fromUtf8("comboBox"))
@@ -121,39 +112,6 @@ class Ui_Dialog(object):
         self.comboBox_5.addItem(_fromUtf8(""))
         self.comboBox_5.addItem(_fromUtf8(""))
         self.comboBox_5.addItem(_fromUtf8(""))
-        self.comboBox_6 = QtGui.QComboBox(Dialog)
-        self.comboBox_6.setGeometry(QtCore.QRect(200, 330, 69, 25))
-        self.comboBox_6.setObjectName(_fromUtf8("comboBox_6"))
-        self.comboBox_6.addItem(_fromUtf8(""))
-        self.comboBox_6.addItem(_fromUtf8(""))
-        self.comboBox_6.addItem(_fromUtf8(""))
-        self.comboBox_6.addItem(_fromUtf8(""))
-        self.comboBox_6.addItem(_fromUtf8(""))
-        self.comboBox_6.addItem(_fromUtf8(""))
-        self.comboBox_6.addItem(_fromUtf8(""))
-        self.comboBox_6.addItem(_fromUtf8(""))
-        self.comboBox_7 = QtGui.QComboBox(Dialog)
-        self.comboBox_7.setGeometry(QtCore.QRect(200, 390, 69, 25))
-        self.comboBox_7.setObjectName(_fromUtf8("comboBox_7"))
-        self.comboBox_7.addItem(_fromUtf8(""))
-        self.comboBox_7.addItem(_fromUtf8(""))
-        self.comboBox_7.addItem(_fromUtf8(""))
-        self.comboBox_7.addItem(_fromUtf8(""))
-        self.comboBox_7.addItem(_fromUtf8(""))
-        self.comboBox_7.addItem(_fromUtf8(""))
-        self.comboBox_7.addItem(_fromUtf8(""))
-        self.comboBox_7.addItem(_fromUtf8(""))
-        self.comboBox_8 = QtGui.QComboBox(Dialog)
-        self.comboBox_8.setGeometry(QtCore.QRect(200, 460, 69, 25))
-        self.comboBox_8.setObjectName(_fromUtf8("comboBox_8"))
-        self.comboBox_8.addItem(_fromUtf8(""))
-        self.comboBox_8.addItem(_fromUtf8(""))
-        self.comboBox_8.addItem(_fromUtf8(""))
-        self.comboBox_8.addItem(_fromUtf8(""))
-        self.comboBox_8.addItem(_fromUtf8(""))
-        self.comboBox_8.addItem(_fromUtf8(""))
-        self.comboBox_8.addItem(_fromUtf8(""))
-        self.comboBox_8.addItem(_fromUtf8(""))
 
         self.retranslateUi(Dialog)
         QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("accepted()")), self.calc)
@@ -162,14 +120,12 @@ class Ui_Dialog(object):
 
     def retranslateUi(self, Dialog):
         Dialog.setWindowTitle(_translate("Dialog", "Grade Card", None))
-        self.lineEdit.setText(_translate("Dialog", "MA 201", None))
-        self.lineEdit_2.setText(_translate("Dialog", "EE 201", None))
-        self.lineEdit_3.setText(_translate("Dialog", "EE 203", None))
-        self.lineEdit_4.setText(_translate("Dialog", "EE 205", None))
-        self.lineEdit_5.setText(_translate("Dialog", "EE 207", None))
-        self.lineEdit_6.setText(_translate("Dialog", "HS 210", None))
-        self.lineEdit_7.setText(_translate("Dialog", "EE 231", None))
-        self.lineEdit_8.setText(_translate("Dialog", "EE 233", None))
+        self.lineEdit.setText(_translate("Dialog", "EE 402", None))
+        self.lineEdit_2.setText(_translate("Dialog", "EE 404", None))
+        self.lineEdit_3.setText(_translate("Dialog", "Elective 4", None))
+        self.lineEdit_4.setText(_translate("Dialog", "Elective 5", None))
+        self.lineEdit_5.setText(_translate("Dialog", "EE 492", None))
+    
         self.comboBox.setItemText(0, _translate("Dialog", "O", None))
         self.comboBox.setItemText(1, _translate("Dialog", "A+", None))
         self.comboBox.setItemText(2, _translate("Dialog", "A", None))
@@ -210,42 +166,14 @@ class Ui_Dialog(object):
         self.comboBox_5.setItemText(5, _translate("Dialog", "C", None))
         self.comboBox_5.setItemText(6, _translate("Dialog", "P", None))
         self.comboBox_5.setItemText(7, _translate("Dialog", "F", None))
-        self.comboBox_6.setItemText(0, _translate("Dialog", "O", None))
-        self.comboBox_6.setItemText(1, _translate("Dialog", "A+", None))
-        self.comboBox_6.setItemText(2, _translate("Dialog", "A", None))
-        self.comboBox_6.setItemText(3, _translate("Dialog", "B+", None))
-        self.comboBox_6.setItemText(4, _translate("Dialog", "B", None))
-        self.comboBox_6.setItemText(5, _translate("Dialog", "C", None))
-        self.comboBox_6.setItemText(6, _translate("Dialog", "P", None))
-        self.comboBox_6.setItemText(7, _translate("Dialog", "F", None))
-        self.comboBox_7.setItemText(0, _translate("Dialog", "O", None))
-        self.comboBox_7.setItemText(1, _translate("Dialog", "A+", None))
-        self.comboBox_7.setItemText(2, _translate("Dialog", "A", None))
-        self.comboBox_7.setItemText(3, _translate("Dialog", "B+", None))
-        self.comboBox_7.setItemText(4, _translate("Dialog", "B", None))
-        self.comboBox_7.setItemText(5, _translate("Dialog", "C", None))
-        self.comboBox_7.setItemText(6, _translate("Dialog", "P", None))
-        self.comboBox_7.setItemText(7, _translate("Dialog", "F", None))
-        self.comboBox_8.setItemText(0, _translate("Dialog", "O", None))
-        self.comboBox_8.setItemText(1, _translate("Dialog", "A+", None))
-        self.comboBox_8.setItemText(2, _translate("Dialog", "A", None))
-        self.comboBox_8.setItemText(3, _translate("Dialog", "B+", None))
-        self.comboBox_8.setItemText(4, _translate("Dialog", "B", None))
-        self.comboBox_8.setItemText(5, _translate("Dialog", "C", None))
-        self.comboBox_8.setItemText(6, _translate("Dialog", "P", None))
-        self.comboBox_8.setItemText(7, _translate("Dialog", "F", None))
-
     def calc(self):
-        sum=0.0
-        credSum=24
-        sum+=gradeDict[str(self.comboBox.currentText())]*4
-        sum+=gradeDict[str(self.comboBox_2.currentText())]*4
-        sum+=gradeDict[str(self.comboBox_3.currentText())]*4
-        sum+=gradeDict[str(self.comboBox_4.currentText())]*4
-        sum+=gradeDict[str(self.comboBox_5.currentText())]*3
-        sum+=gradeDict[str(self.comboBox_6.currentText())]*3
-        sum+=gradeDict[str(self.comboBox_7.currentText())]*1
-        sum+=gradeDict[str(self.comboBox_8.currentText())]*1
+        sum=0
+        credSum=18
+        sum+=gradeDict[str(self.comboBox.currentText())]*3
+        sum+=gradeDict[str(self.comboBox_2.currentText())]*3
+        sum+=gradeDict[str(self.comboBox_3.currentText())]*3
+        sum+=gradeDict[str(self.comboBox_4.currentText())]*3
+        sum+=gradeDict[str(self.comboBox_5.currentText())]*6
         sum/=credSum
 
         msg=QtGui.QMessageBox()

@@ -66,6 +66,9 @@ class Ui_Dialog(object):
         self.lineEdit_8 = QtGui.QLineEdit(Dialog)
         self.lineEdit_8.setGeometry(QtCore.QRect(20, 460, 113, 29))
         self.lineEdit_8.setObjectName(_fromUtf8("lineEdit_8"))
+        self.lineEdit_9 = QtGui.QLineEdit(Dialog)
+        self.lineEdit_9.setGeometry(QtCore.QRect(20, 500, 113, 29))
+        self.lineEdit_9.setObjectName(_fromUtf8("lineEdit_9"))
         self.comboBox = QtGui.QComboBox(Dialog)
         self.comboBox.setGeometry(QtCore.QRect(200, 20, 69, 25))
         self.comboBox.setObjectName(_fromUtf8("comboBox"))
@@ -154,6 +157,17 @@ class Ui_Dialog(object):
         self.comboBox_8.addItem(_fromUtf8(""))
         self.comboBox_8.addItem(_fromUtf8(""))
         self.comboBox_8.addItem(_fromUtf8(""))
+        self.comboBox_9 = QtGui.QComboBox(Dialog)
+        self.comboBox_9.setGeometry(QtCore.QRect(200, 500, 69, 25))
+        self.comboBox_9.setObjectName(_fromUtf8("comboBox_9"))
+        self.comboBox_9.addItem(_fromUtf8(""))
+        self.comboBox_9.addItem(_fromUtf8(""))
+        self.comboBox_9.addItem(_fromUtf8(""))
+        self.comboBox_9.addItem(_fromUtf8(""))
+        self.comboBox_9.addItem(_fromUtf8(""))
+        self.comboBox_9.addItem(_fromUtf8(""))
+        self.comboBox_9.addItem(_fromUtf8(""))
+        self.comboBox_9.addItem(_fromUtf8(""))
 
         self.retranslateUi(Dialog)
         QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL(_fromUtf8("accepted()")), self.calc)
@@ -162,14 +176,15 @@ class Ui_Dialog(object):
 
     def retranslateUi(self, Dialog):
         Dialog.setWindowTitle(_translate("Dialog", "Grade Card", None))
-        self.lineEdit.setText(_translate("Dialog", "MA 201", None))
-        self.lineEdit_2.setText(_translate("Dialog", "EE 201", None))
-        self.lineEdit_3.setText(_translate("Dialog", "EE 203", None))
-        self.lineEdit_4.setText(_translate("Dialog", "EE 205", None))
-        self.lineEdit_5.setText(_translate("Dialog", "EE 207", None))
-        self.lineEdit_6.setText(_translate("Dialog", "HS 210", None))
-        self.lineEdit_7.setText(_translate("Dialog", "EE 231", None))
-        self.lineEdit_8.setText(_translate("Dialog", "EE 233", None))
+        self.lineEdit.setText(_translate("Dialog", "MA 102", None))
+        self.lineEdit_2.setText(_translate("Dialog", "PH 100", None))
+        self.lineEdit_3.setText(_translate("Dialog", "BE 100", None))
+        self.lineEdit_4.setText(_translate("Dialog", "BE 102", None))
+        self.lineEdit_5.setText(_translate("Dialog", "EE 100", None))
+        self.lineEdit_6.setText(_translate("Dialog", "CE 100", None))
+        self.lineEdit_7.setText(_translate("Dialog", "PH 110", None))
+        self.lineEdit_8.setText(_translate("Dialog", "CE 110", None))
+        self.lineEdit_9.setText(_translate("Dialog", "EE 110", None))
         self.comboBox.setItemText(0, _translate("Dialog", "O", None))
         self.comboBox.setItemText(1, _translate("Dialog", "A+", None))
         self.comboBox.setItemText(2, _translate("Dialog", "A", None))
@@ -234,6 +249,14 @@ class Ui_Dialog(object):
         self.comboBox_8.setItemText(5, _translate("Dialog", "C", None))
         self.comboBox_8.setItemText(6, _translate("Dialog", "P", None))
         self.comboBox_8.setItemText(7, _translate("Dialog", "F", None))
+        self.comboBox_9.setItemText(0, _translate("Dialog", "O", None))
+        self.comboBox_9.setItemText(1, _translate("Dialog", "A+", None))
+        self.comboBox_9.setItemText(2, _translate("Dialog", "A", None))
+        self.comboBox_9.setItemText(3, _translate("Dialog", "B+", None))
+        self.comboBox_9.setItemText(4, _translate("Dialog", "B", None))
+        self.comboBox_9.setItemText(5, _translate("Dialog", "C", None))
+        self.comboBox_9.setItemText(6, _translate("Dialog", "P", None))
+        self.comboBox_9.setItemText(7, _translate("Dialog", "F", None))
 
     def calc(self):
         sum=0.0
@@ -241,11 +264,12 @@ class Ui_Dialog(object):
         sum+=gradeDict[str(self.comboBox.currentText())]*4
         sum+=gradeDict[str(self.comboBox_2.currentText())]*4
         sum+=gradeDict[str(self.comboBox_3.currentText())]*4
-        sum+=gradeDict[str(self.comboBox_4.currentText())]*4
+        sum+=gradeDict[str(self.comboBox_4.currentText())]*3
         sum+=gradeDict[str(self.comboBox_5.currentText())]*3
         sum+=gradeDict[str(self.comboBox_6.currentText())]*3
         sum+=gradeDict[str(self.comboBox_7.currentText())]*1
         sum+=gradeDict[str(self.comboBox_8.currentText())]*1
+        sum+=gradeDict[str(self.comboBox_9.currentText())]*1
         sum/=credSum
 
         msg=QtGui.QMessageBox()
