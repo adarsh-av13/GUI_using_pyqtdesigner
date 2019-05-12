@@ -134,7 +134,7 @@ class Ui_Dialog(object):
             ui2.setupUi(Dialog2)
             Dialog.hide()
             Dialog2.exec_()  
-         if str(self.comboBox_2.currentText())=="EEE" and str(self.comboBox.currentText())=="S4":
+        elif str(self.comboBox_2.currentText())=="EEE" and str(self.comboBox.currentText())=="S4":
             import eees4
             Dialog2 = QtGui.QDialog()
             ui2 = eees4.Ui_Dialog()
@@ -189,7 +189,64 @@ class Ui_Dialog(object):
             ui2 = eees8.Ui_Dialog()
             ui2.setupUi(Dialog2)
             Dialog.hide()
+            Dialog2.exec_()
+        elif str(self.comboBox_2.currentText())=="ME" and str(self.comboBox.currentText())=="S4":
+            import mes4
+            Dialog2 = QtGui.QDialog()
+            ui2 = mes4.Ui_Dialog()
+            ui2.setupUi(Dialog2)
+            Dialog.hide()
+            Dialog2.exec_()
+        elif str(self.comboBox_2.currentText())=="ME" and str(self.comboBox.currentText())=="S3":
+            import mes3
+            Dialog2 = QtGui.QDialog()
+            ui2 = mes3.Ui_Dialog()
+            ui2.setupUi(Dialog2)
+            Dialog.hide()
+            Dialog2.exec_()    
+        elif str(self.comboBox_2.currentText())=="ME" and str(self.comboBox.currentText())=="S1":
+            import mes1
+            Dialog2 = QtGui.QDialog()
+            ui2 = mes1.Ui_Dialog()
+            ui2.setupUi(Dialog2)
+            Dialog.hide()
+            Dialog2.exec_()    
+        elif str(self.comboBox_2.currentText())=="ME" and str(self.comboBox.currentText())=="S2":
+            import mes2
+            Dialog2 = QtGui.QDialog()
+            ui2 = mes2.Ui_Dialog()
+            ui2.setupUi(Dialog2)
+            Dialog.hide()
+            Dialog2.exec_()    
+        elif str(self.comboBox_2.currentText())=="ME" and str(self.comboBox.currentText())=="S5":
+            import mes5
+            Dialog2 = QtGui.QDialog()
+            ui2 = mes5.Ui_Dialog()
+            ui2.setupUi(Dialog2)
+            Dialog.hide()
+            Dialog2.exec_()    
+        elif str(self.comboBox_2.currentText())=="ME" and str(self.comboBox.currentText())=="S6":
+            import mes6
+            Dialog2 = QtGui.QDialog()
+            ui2 = mes6.Ui_Dialog()
+            ui2.setupUi(Dialog2)
+            Dialog.hide()
+            Dialog2.exec_()    
+        elif str(self.comboBox_2.currentText())=="ME" and str(self.comboBox.currentText())=="S7":
+            import mes7
+            Dialog2 = QtGui.QDialog()
+            ui2 = mes7.Ui_Dialog()
+            ui2.setupUi(Dialog2)
+            Dialog.hide()
+            Dialog2.exec_()
+        elif str(self.comboBox_2.currentText())=="ME" and str(self.comboBox.currentText())=="S8":
+            import mes8
+            Dialog2 = QtGui.QDialog()
+            ui2 = mes8.Ui_Dialog()
+            ui2.setupUi(Dialog2)
+            Dialog.hide()
             Dialog2.exec_()       
+
 
                              
 if __name__ == "__main__":
