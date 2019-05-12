@@ -134,7 +134,7 @@ class Ui_Dialog(object):
             ui2.setupUi(Dialog2)
             Dialog.hide()
             Dialog2.exec_()  
-         if str(self.comboBox_2.currentText())=="EEE" and str(self.comboBox.currentText())=="S4":
+        elif str(self.comboBox_2.currentText())=="EEE" and str(self.comboBox.currentText())=="S4":
             import eees4
             Dialog2 = QtGui.QDialog()
             ui2 = eees4.Ui_Dialog()

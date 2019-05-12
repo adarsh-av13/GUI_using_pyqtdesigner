@@ -163,13 +163,13 @@ class Ui_Dialog(object):
     def retranslateUi(self, Dialog):
         Dialog.setWindowTitle(_translate("Dialog", "Grade Card", None))
         self.lineEdit.setText(_translate("Dialog", "MA 202", None))
-        self.lineEdit_2.setText(_translate("Dialog", "CS 202", None))
-        self.lineEdit_3.setText(_translate("Dialog", "CS 204", None))
-        self.lineEdit_4.setText(_translate("Dialog", "CS 206", None))
-        self.lineEdit_5.setText(_translate("Dialog", "CS 208", None))
-        self.lineEdit_6.setText(_translate("Dialog", "HS 200", None))
-        self.lineEdit_7.setText(_translate("Dialog", "CS 232", None))
-        self.lineEdit_8.setText(_translate("Dialog", "CS 234", None))
+        self.lineEdit_2.setText(_translate("Dialog", "EE 201", None))
+        self.lineEdit_3.setText(_translate("Dialog", "EE 203", None))
+        self.lineEdit_4.setText(_translate("Dialog", "EE 205", None))
+        self.lineEdit_5.setText(_translate("Dialog", "EE 207", None))
+        self.lineEdit_6.setText(_translate("Dialog", "HS 210", None))
+        self.lineEdit_7.setText(_translate("Dialog", "EE 231", None))
+        self.lineEdit_8.setText(_translate("Dialog", "EE 233", None))
         self.comboBox.setItemText(0, _translate("Dialog", "O", None))
         self.comboBox.setItemText(1, _translate("Dialog", "A+", None))
         self.comboBox.setItemText(2, _translate("Dialog", "A", None))
@@ -237,11 +237,11 @@ class Ui_Dialog(object):
 
     def calc(self):
         sum=0.0
-        credSum=23
+        credSum=24
         sum+=gradeDict[str(self.comboBox.currentText())]*4
         sum+=gradeDict[str(self.comboBox_2.currentText())]*4
         sum+=gradeDict[str(self.comboBox_3.currentText())]*4
-        sum+=gradeDict[str(self.comboBox_4.currentText())]*3
+        sum+=gradeDict[str(self.comboBox_4.currentText())]*4
         sum+=gradeDict[str(self.comboBox_5.currentText())]*3
         sum+=gradeDict[str(self.comboBox_6.currentText())]*3
         sum+=gradeDict[str(self.comboBox_7.currentText())]*1
