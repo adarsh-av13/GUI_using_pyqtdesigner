@@ -40,7 +40,7 @@ class Ui_Dialog(object):
         self.buttonBox = QtGui.QDialogButtonBox(Dialog)
         self.buttonBox.setGeometry(QtCore.QRect(430, 500, 341, 32))
         self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
-        self.buttonBox.setStandardButtons(QtGui.QDialogButtonBox.Cancel|QtGui.QDialogButtonBox.Ok)
+        self.buttonBox.setStandardButtons(QtGui.QDialogButtonBox.Close|QtGui.QDialogButtonBox.Ok)
         self.buttonBox.setObjectName(_fromUtf8("buttonBox"))
         self.lineEdit = QtGui.QLineEdit(Dialog)
         self.lineEdit.setGeometry(QtCore.QRect(20, 20, 111, 29))
@@ -175,6 +175,7 @@ class Ui_Dialog(object):
         sum+=gradeDict[str(self.comboBox_4.currentText())]*3
         sum+=gradeDict[str(self.comboBox_5.currentText())]*6
         sum/=credSum
+        sum=round(sum,2)
 
         msg=QtGui.QMessageBox()
         msg.setWindowTitle("GPA")
